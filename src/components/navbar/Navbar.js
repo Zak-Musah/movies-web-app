@@ -9,30 +9,30 @@ const HEADER_LIST = [
     name: "Home",
     type: "home",
   },
-  {
-    id: 2,
+  // {
+  //   id: 2,
 
-    name: "Women",
-    type: "women",
-  },
-  {
-    id: 3,
+  //   name: "Women",
+  //   type: "women",
+  // },
+  // {
+  //   id: 3,
 
-    name: "Men",
-    type: "men",
-  },
+  //   name: "Men",
+  //   type: "men",
+  // },
   {
     id: 4,
 
     name: "About Us",
     type: "about_us",
   },
-  {
-    id: 5,
+  // {
+  //   id: 5,
 
-    name: "Why Us",
-    type: "why_us",
-  },
+  //   name: "Why Us",
+  //   type: "why_us",
+  // },
   {
     id: 6,
 
