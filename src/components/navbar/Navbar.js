@@ -3,36 +3,36 @@ import React, { useState } from "react";
 import "./Navbar.scss";
 import logo from "./images/logo.svg";
 const HEADER_LIST = [
+  // {
+  //   id: 1,
+
+  //   name: "Home",
+  //   type: "home",
+  // },
   {
-    id: 1,
+    id: 2,
 
-    name: "Home",
-    type: "home",
+    name: "Women",
+    type: "women",
   },
-  // {
-  //   id: 2,
+  {
+    id: 3,
 
-  //   name: "Women",
-  //   type: "women",
-  // },
-  // {
-  //   id: 3,
-
-  //   name: "Men",
-  //   type: "men",
-  // },
+    name: "Men",
+    type: "men",
+  },
   {
     id: 4,
 
     name: "About Us",
     type: "about_us",
   },
-  // {
-  //   id: 5,
+  {
+    id: 5,
 
-  //   name: "Why Us",
-  //   type: "why_us",
-  // },
+    name: "Why Us",
+    type: "why_us",
+  },
   {
     id: 6,
 
@@ -61,9 +61,9 @@ export const Navbar = () => {
         <div className="header-bar"></div>
         <div className="header-navbar">
           <div className="header-image">
-            {/* <img src={logo} alt="" />  */}
+            <img style={{ marginTop: "7px" }} height="45px" src={logo} alt="" />
             <i>
-              <h5 style={{ marginTop: "15px" }}>A NAME MODEL</h5>
+              <h8 style={{ marginTop: "5px" }}>A NAME MODEL</h8>
             </i>
           </div>
           <div
