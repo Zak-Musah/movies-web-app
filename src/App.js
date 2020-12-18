@@ -11,7 +11,7 @@ const App = () => {
       <div className="app">
         <Navbar />
         <Main />
-        <h1>Setup React Redux</h1>
+        <h1>Become A Name</h1>
       </div>
     </Provider>
   );
