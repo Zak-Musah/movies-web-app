@@ -36,12 +36,10 @@ jobs:
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]
             then
-              git push https://heroku:$HEROKU_API_KEY@git.heroku.com/aname-production.git ${CIRCLE_BRANCH}:master -f
-            elif [ "${CIRCLE_BRANCH}" == "staging" ]
+              git push https://heroku:$HEROKU_API_KEY@git.heroku.com/movies-app-production.git ${CIRCLE_BRANCH}:master -f
+            elif [ "${CIRCLE_BRANCH}" == "develop" ]
             then
-              git push https://heroku:$HEROKU_API_KEY@git.heroku.com/aname-staging.git ${CIRCLE_BRANCH}:master -f
-            else
-              git push https://heroku:$HEROKU_API_KEY@git.heroku.com/aname-dev.git ${CIRCLE_BRANCH}:master -f
+              git push https://heroku:$HEROKU_API_KEY@git.heroku.com/movies-app-dev.git ${CIRCLE_BRANCH}:master -f
             fi
 
 workflows:
