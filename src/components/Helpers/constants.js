@@ -1,126 +1,92 @@
 export const images = [
   {
     url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7954_1.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://images.pexels.com/photos/688574/pexels-photo-688574.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    rating: 5.5,
   },
   {
     url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/DSC03171.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://images.pexels.com/photos/688574/pexels-photo-688574.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    rating: 8.5,
   },
   {
     url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7477.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://images.pexels.com/photos/776653/pexels-photo-776653.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    rating: 7.8,
   },
   {
     url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://images.pexels.com/photos/776653/pexels-photo-776653.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    rating: 9.7,
   },
   {
     url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://images.pexels.com/photos/776653/pexels-photo-776653.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    rating: 6.5,
   },
   {
     url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    rating: 8.5,
   },
   {
     url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://images.pexels.com/photos/688574/pexels-photo-688574.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    rating: 5.5,
   },
   {
     url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://images.pexels.com/photos/688574/pexels-photo-688574.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    rating: 8.5,
   },
   {
     url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://images.pexels.com/photos/776653/pexels-photo-776653.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    rating: 7.8,
   },
   {
     url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://images.pexels.com/photos/776653/pexels-photo-776653.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    rating: 9.7,
   },
   {
     url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://images.pexels.com/photos/776653/pexels-photo-776653.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    rating: 6.5,
   },
   {
     url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    rating: 8.5,
   },
   {
     url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://images.pexels.com/photos/688574/pexels-photo-688574.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    rating: 5.5,
   },
   {
     url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://images.pexels.com/photos/688574/pexels-photo-688574.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    rating: 8.5,
   },
   {
     url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://images.pexels.com/photos/776653/pexels-photo-776653.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    rating: 7.8,
   },
   {
     url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://images.pexels.com/photos/776653/pexels-photo-776653.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    rating: 9.7,
   },
   {
     url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://images.pexels.com/photos/776653/pexels-photo-776653.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    rating: 6.5,
   },
   {
     url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-  },
-  {
-    url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-  },
-  {
-    url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-  },
-  {
-    url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-  },
-  {
-    url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-  },
-  {
-    url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-  },
-  {
-    url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-  },
-  {
-    url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-  },
-  {
-    url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-  },
-  {
-    url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-  },
-  {
-    url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-  },
-  {
-    url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-  },
-  {
-    url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-  },
-  {
-    url:
-      "https://pam-gallery.s3.eu-central-1.amazonaws.com/IMG_7925.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+      "https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+    rating: 8.5,
   },
 ];

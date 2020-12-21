@@ -75,4 +75,14 @@
     text-transform: uppercase;
     color: #ffffff;
   }
+
+  .grid-detail-rating {
+    padding-top: 4px;
+    display: flex;
+
+    .grid-vote-average {
+      color: #ffffff;
+      margin-top: -3px;
+    }
+  }
 }
