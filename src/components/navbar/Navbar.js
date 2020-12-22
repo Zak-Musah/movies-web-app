@@ -1,5 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import PropTypes from "prop-types";
+import { useDispatch, useSelector } from "react-redux";
 
+import { getMovies } from "../../redux/actions/movies";
 import "./Navbar.scss";
 import logo from "./images/logo.svg";
 
@@ -24,6 +27,19 @@ const HEADER_LIST = [
   },
 ];
 export const Navbar = () => {
+  const [movies, setMovies] = useState([]);
+  const moviesArray = useSelector((state) => state.movies.list);
+  const dispatch = useDispatch();
+  useEffect(() => {
+    dispatch(getMovies("now_playing", 1));
+  }, []);
+
+  useEffect(() => {
+    if (moviesArray) setMovies(moviesArray);
+  }, [moviesArray]);
+
+  console.log(movies);
+
   const [navClass, setNavClass] = useState(false);
   const [menuClass, setMenuClass] = useState(false);
 
@@ -80,4 +96,8 @@ export const Navbar = () => {
       </div>
     </>
   );
+};
+
+Navbar.propTypes = {
+  getMovies: PropTypes.func,
 };
