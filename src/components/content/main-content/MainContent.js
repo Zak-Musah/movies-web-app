@@ -14,7 +14,6 @@ const MainContent = () => {
   const [images, setImages] = useState([]);
 
   const moviesArray = useSelector((state) => state.movies.list);
-  console.log(moviesArray);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getMovies("now_playing", 1));
@@ -51,8 +50,6 @@ const MainContent = () => {
       setImages(IMAGES);
     }
   }, []);
-
-  console.log(images);
 
   const [currentPage, setCurrentPage] = useState(1);
 
