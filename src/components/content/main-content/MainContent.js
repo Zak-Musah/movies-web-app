@@ -12,11 +12,9 @@ import { IMAGE_URL } from "../../../services/service";
 const MainContent = () => {
   const [movies, setMovies] = useState([]);
   const [images, setImages] = useState([]);
-  const randomMovies = movies
-    .sort(() => Math.random() - Math.random())
-    .slice(0, 4);
 
   const moviesArray = useSelector((state) => state.movies.list);
+  console.log(moviesArray);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getMovies("now_playing", 1));
@@ -25,6 +23,11 @@ const MainContent = () => {
   useEffect(() => {
     if (moviesArray.length > 0) setMovies(moviesArray);
   }, [moviesArray]);
+
+  const randomMovies = moviesArray
+    .sort(() => Math.random() - Math.random())
+    .slice(0, 4);
+
   useEffect(() => {
     if (randomMovies.length) {
       const IMAGES = [

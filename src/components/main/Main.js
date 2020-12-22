@@ -9,7 +9,7 @@ const Main = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 3000);
   }, []);
   return <div className="main">{loading ? <Spinner /> : <MainContent />}</div>;
 };
