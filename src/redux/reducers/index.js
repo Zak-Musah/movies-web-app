@@ -1,11 +1,11 @@
 import { combineReducers } from "redux";
 
 import errorReducer from "./errorReducer";
-import modelReducer from "./modelReducer";
+import movieReducer from "./movieReducer";
 
 const reducers = combineReducers({
   errors: errorReducer,
-  models: modelReducer,
+  movies: movieReducer,
 });
 
 export default reducers;
