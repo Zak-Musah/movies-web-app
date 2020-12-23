@@ -2,43 +2,58 @@ import React, { useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { useDispatch, useSelector } from "react-redux";
 
-import { getMovies } from "../../redux/actions/movies";
+import {
+  getMovies,
+  setMovieType,
+  setResponsePageNumber,
+} from "../../redux/actions/movies";
 import "./Navbar.scss";
 import logo from "./images/logo.svg";
 
 const HEADER_LIST = [
   {
     id: 1,
+    iconClass: "fas fa-film",
+    name: "Now Playing",
+    type: "now_playing",
+  },
+  {
+    id: 2,
     iconClass: "fas fa-fire",
     name: "Popular",
     type: "popular",
   },
   {
-    id: 2,
+    id: 3,
     iconClass: "fas fa-star",
     name: "Top Rated",
     type: "top_rated",
   },
   {
-    id: 3,
+    id: 4,
     iconClass: "fas fa-plus-square",
     name: "Upcoming",
     type: "upcoming",
   },
 ];
 export const Navbar = () => {
-  const [movies, setMovies] = useState([]);
-  const moviesArray = useSelector((state) => state.movies.list);
+  const [type, setType] = useState("now_playing");
+  const movies = useSelector((state) => state.movies);
+  const moviesArray = movies.list;
+  const page = movies.page;
+  const totalPages = movies.totalPages;
+  const movieType = movies.movieType;
+
   const dispatch = useDispatch();
   useEffect(() => {
-    dispatch(getMovies("now_playing", 1));
-  }, []);
+    dispatch(getMovies(type, page));
+    dispatch(setResponsePageNumber(page, totalPages));
+  }, [type]);
 
-  useEffect(() => {
-    if (moviesArray) setMovies(moviesArray);
-  }, [moviesArray]);
-
-  console.log(movies);
+  const setMovieTypeUrl = (type) => {
+    setType(type);
+    dispatch(setMovieType(type));
+  };
 
   const [navClass, setNavClass] = useState(false);
   const [menuClass, setMenuClass] = useState(false);
@@ -78,7 +93,15 @@ export const Navbar = () => {
             }`}
           >
             {HEADER_LIST.map((data) => (
-              <li key={data.id} className="header-nav-item">
+              <li
+                key={data.id}
+                className={
+                  data.type === type
+                    ? "header-nav-item active-item"
+                    : "header-nav-item"
+                }
+                onClick={() => setMovieTypeUrl(data.type)}
+              >
                 <span className="header-list-name">
                   <i className={data.iconClass}></i>
                 </span>
@@ -86,11 +109,11 @@ export const Navbar = () => {
                 <span className="header-list-name">{data.name}</span>
               </li>
             ))}
-            <input
+            {/* <input
               className="search-input"
               type="text"
               placeholder="Search for a movie"
-            />
+            /> */}
           </ul>
         </div>
       </div>
