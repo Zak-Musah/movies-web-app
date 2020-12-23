@@ -1,5 +1,7 @@
 import axios from "axios";
 
+require("dotenv").config();
+
 const REQUEST_URL = "https://api.themoviedb.org/3";
 export const IMAGE_URL = "https://image.tmdb.org/t/p/original";
 const API_KEY = process.env.REACT_APP_API_SECRET;
