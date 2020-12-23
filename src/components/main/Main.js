@@ -29,8 +29,6 @@ const Main = () => {
   useEffect(() => {
     if (moviesArray.length > 0) setMovieData(moviesArray);
   }, [moviesArray]);
-  console.log(page);
-  console.log(moviesArray);
 
   const handleScroll = () => {
     const containerHeight = mainRef.current.getBoundingClientRect().height;
@@ -38,7 +36,6 @@ const Main = () => {
       top: bottomLineTop,
     } = bottomLineRef.current.getBoundingClientRect();
     if (bottomLineTop <= containerHeight) {
-      // fetch data
       fetchData();
     }
   };
