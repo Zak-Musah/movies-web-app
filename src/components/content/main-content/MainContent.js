@@ -17,7 +17,6 @@ const MainContent = () => {
   const page = movies.page;
   const movieType = movies.movieType;
   const total_pages = movies.totalPages;
-  console.log(movies);
 
   const dispatch = useDispatch();
   useEffect(() => {
