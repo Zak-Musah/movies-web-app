@@ -3,16 +3,12 @@ import { useDispatch, useSelector } from "react-redux";
 
 import MainContent from "../content/main-content/MainContent";
 import Spinner from "../spinner/Spinner";
-import {
-  loadMoreMovies,
-  setResponsePageNumber,
-} from ".../../../src/redux/actions/movies";
+import { loadMoreMovies } from ".../../../src/redux/actions/movies";
 import "./Main.scss";
 
 const Main = () => {
   const [loading, setLoading] = useState(false);
   const movies = useSelector((state) => state.movies);
-  const moviesArray = movies.list;
   const page = movies.page;
   const totalPages = movies.totalPages;
   const dispatch = useDispatch();
