@@ -18,15 +18,6 @@ const MainContent = () => {
   const movieType = movies.movieType;
   const total_pages = movies.totalPages;
 
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getMovies(movieType, page));
-  }, []);
-
-  // useEffect(() => {
-  //   if (moviesArray.length > 0) setMoviesList(moviesArray);
-  // }, [moviesArray]);
-
   const randomMovies = moviesArray
     .sort(() => Math.random() - Math.random())
     .slice(0, 4);

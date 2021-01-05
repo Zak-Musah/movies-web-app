@@ -39,10 +39,8 @@ const HEADER_LIST = [
 export const Navbar = () => {
   const [type, setType] = useState("now_playing");
   const movies = useSelector((state) => state.movies);
-  const moviesArray = movies.list;
   const page = movies.page;
   const totalPages = movies.totalPages;
-  const movieType = movies.movieType;
 
   const dispatch = useDispatch();
   useEffect(() => {

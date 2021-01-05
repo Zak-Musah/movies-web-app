@@ -8,22 +8,12 @@ import { getMovies } from ".../../../src/redux/actions/movies";
 import { IMAGE_URL } from "../../../services/service";
 
 const Grid = (props) => {
-  const [movieData, setMovieData] = useState([]);
-
   const moviesArray = useSelector((state) => state.movies.list);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getMovies("now_playing", 1));
-  }, []);
-
-  useEffect(() => {
-    if (moviesArray.length > 0) setMovieData(moviesArray);
-  }, [moviesArray]);
 
   return (
     <>
       <div className="grid">
-        {movieData.map((data, i) => (
+        {moviesArray.map((data, i) => (
           <div key={uuidv4()}>
             <div
               className="grid-cell"
