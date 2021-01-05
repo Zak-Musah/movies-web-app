@@ -12,7 +12,7 @@ const initialState = {
   movieType: "now_playing",
 };
 
-export default (state = initialState, action) => {
+export const movieReducer = (state = initialState, action) => {
   switch (action.type) {
     case MOVIE_LIST:
       return {

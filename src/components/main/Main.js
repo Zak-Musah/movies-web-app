@@ -11,8 +11,6 @@ import "./Main.scss";
 
 const Main = () => {
   const [loading, setLoading] = useState(false);
-  const [movieData, setMovieData] = useState([]);
-  const [currentPage, setCurrentPage] = useState([]);
   const movies = useSelector((state) => state.movies);
   const moviesArray = movies.list;
   const page = movies.page;
@@ -20,15 +18,6 @@ const Main = () => {
   const dispatch = useDispatch();
   const mainRef = useRef();
   const bottomLineRef = useRef();
-
-  useEffect(() => {
-    dispatch(loadMoreMovies("now_playing", page));
-    // dispatch(setResponsePageNumber(currentPage, totalPages));
-  }, [currentPage, totalPages]);
-
-  useEffect(() => {
-    if (moviesArray.length > 0) setMovieData(moviesArray);
-  }, [moviesArray]);
 
   const handleScroll = () => {
     const containerHeight = mainRef.current.getBoundingClientRect().height;
@@ -43,7 +32,7 @@ const Main = () => {
     let pageNumber = page;
     if (page < totalPages) {
       pageNumber += 1;
-      setCurrentPage(pageNumber);
+
       dispatch(loadMoreMovies("now_playing", pageNumber));
     }
   };
@@ -51,7 +40,7 @@ const Main = () => {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 3000);
+    }, 5000);
   }, []);
   return (
     <>
