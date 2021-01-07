@@ -10,18 +10,13 @@ import { getMovies } from ".../../../src/redux/actions/movies";
 import { IMAGE_URL } from "../../../services/service";
 
 const MainContent = () => {
-  const [movies, setMovies] = useState([]);
+  const [currentPage, setCurrentPage] = useState(1);
   const [images, setImages] = useState([]);
-
-  const moviesArray = useSelector((state) => state.movies.list);
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(getMovies("now_playing", 1));
-  }, []);
-
-  useEffect(() => {
-    if (moviesArray.length > 0) setMovies(moviesArray);
-  }, [moviesArray]);
+  const movies = useSelector((state) => state.movies);
+  const moviesArray = movies.list;
+  const page = movies.page;
+  const movieType = movies.movieType;
+  const total_pages = movies.totalPages;
 
   const randomMovies = moviesArray
     .sort(() => Math.random() - Math.random())
@@ -50,8 +45,12 @@ const MainContent = () => {
       setImages(IMAGES);
     }
   }, []);
-
-  const [currentPage, setCurrentPage] = useState(1);
+  const HEADER_TYPE = {
+    now_playing: "Now Playing",
+    popular: "Popular",
+    top_rated: "Top Rated",
+    upcoming: "Upcoming",
+  };
 
   const paginate = (type) => {
     if (type === "prev" && currentPage > 1) {
@@ -64,11 +63,11 @@ const MainContent = () => {
     <div className="main-content">
       <Slideshow images={images} auto={true} showArrows={true} />
       <div className="grid-model-title">
-        <div className="modelType">Now Playing</div>
+        <div className="modelType">{HEADER_TYPE[movieType]}</div>
         <div className="paginate">
           <Paginate
             currentPage={currentPage}
-            totalPages={10}
+            totalPages={total_pages}
             paginate={paginate}
           />
         </div>
